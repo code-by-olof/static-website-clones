@@ -105,7 +105,6 @@ PAGE FOOTER
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: aqua;
 }
 
 .page-footer__clima-neutral,
@@ -130,4 +129,13 @@ PAGE FOOTER
 .page-footer__info__company-solutions ul li,
 .page-footer__info__privacy-settings ul li {
     padding: 15px;
+}
+
+
+@media only screen and (min-width: 730px) {
+    .page-footer__info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
