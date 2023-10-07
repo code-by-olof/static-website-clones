@@ -68,26 +68,30 @@ PAGE FOOTER
 */
 
 .page-footer {
-    height: 19%;
     background-color: $light-theme_background-color-contrast;
 }
 
-.page-footer p {
+.page-footer p,
+.page-footer ul li {
     font-size: 1.5rem;
     color: $light-theme_text-on-contrast-background;
 }
 
-.page-footer p a,
-.page-footer p a:link,
-.page-footer p a:hover,
-.page-footer p a:active,
-.page-footer p a:visited {
+.page-footer ul {
+    display: flex;
+}
+
+.page-footer a,
+.page-footer a:link,
+.page-footer a:hover,
+.page-footer a:active,
+.page-footer a:visited {
     color: $light-theme_text-on-contrast-background;
     text-decoration: none;
 }
 
-.page-footer p a:hover,
-.page-footer p a:focus {
+.page-footer a:hover,
+.page-footer a:focus {
     color: $light-theme_text-on-contrast-background;
     text-decoration: underline;
 }
@@ -97,10 +101,22 @@ PAGE FOOTER
     padding: 15px 30px;
 }
 
-.page-footer__clima-neutral {
+.page-footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.page-footer__clima-neutral,
+.page-footer__info__company-solutions,
+.page-footer__info__privacy-settings {
     display: flex;
     justify-content: center;
-    padding: 15px 0 15px 0;
+}
+
+.page-footer__clima-neutral p {
+    padding: 15px 0;
 }
 
 .page-footer__clima-neutral p a {
@@ -109,4 +125,9 @@ PAGE FOOTER
     background-position: left center;
     background-size: 15px auto;
     padding: 0 0 0 21px;
+}
+
+.page-footer__info__company-solutions ul li,
+.page-footer__info__privacy-settings ul li {
+    padding: 15px;
 }
