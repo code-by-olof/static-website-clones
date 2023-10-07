@@ -3,11 +3,30 @@ html {
     font-size: 62.5%;
 }
 
-/* reset */
-
-html, body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd {
+/* 
+RESET 
+*/
+html, body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, form, fieldset, legend, label, input, button {
     margin: 0;
     padding: 0;
 }
 
+ul li, ol li, dl dt, dl dd {
+    list-style: none;
+    list-style-type: none;
+    list-style-image: none;
+}
 
+/* 
+VARS 
+*/
+/* colors light theme */
+$light-theme_background-color: #fff;
+$light-theme_background-color-contrast: #f2f2f2;
+$light-theme_text-general: rgba(0,0,0,.87);
+$light-theme_text-button: #3c4043;
+$light-theme_text-on-contrast-background: #70757a;
+
+/* buttons light theme */
+$light-theme_button-background-color: #f8f9fa;
+$light-theme_button-border-color: #f8f9fa;

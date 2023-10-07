@@ -3,8 +3,22 @@ html {
   font-size: 62.5%;
 }
 
-/* reset */
-html, body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd {
+/* 
+RESET 
+*/
+html, body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, form, fieldset, legend, label, input, button {
   margin: 0;
   padding: 0;
 }
+
+ul li, ol li, dl dt, dl dd {
+  list-style: none;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+/* 
+VARS 
+*/
+/* colors light theme */
+/* buttons light theme */
