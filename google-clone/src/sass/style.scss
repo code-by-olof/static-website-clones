@@ -186,6 +186,7 @@ PAGE MAIN
 FORM
 */
 
+
 form.google-search__main-search {
     margin: 20px auto;
     width: 90%;
@@ -195,8 +196,20 @@ form.google-search__main-search {
         max-width: 584px;
         height: 48px;
         border-radius: $search-border-radius;
-        border: 1px solid $border-color;
+        border: 1px solid $border-color;        
     }
+
+    fieldset:hover,
+    fieldset:focus {
+        box-shadow:0 1px 6px rgba(32,33,36,.28);
+    }
+}
+
+.icon-search {
+    fill: #9aa0a6;
+    width: 20px;
+    height: 20px;
+    margin: 14px 0 0 12px;
 }
 
 
