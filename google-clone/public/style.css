@@ -29,6 +29,7 @@ VARS
 /* colors light theme */
 /* buttons light theme */
 /* generel vars */
+/* forms */
 /* 
 GRID 
 */
@@ -94,10 +95,6 @@ PAGE HEADER
   border-radius: 37px;
 }
 
-.page-header ul li.apps a svg {
-  filter: invert(40%) sepia(10%) saturate(237%) hue-rotate(174deg) brightness(92%) contrast(90%);
-}
-
 .page-header ul li.apps a:hover,
 .page-header ul li.apps a:focus {
   background-color: #f2f2f2;
@@ -127,6 +124,58 @@ a.btn--sign-in:visited {
 /* 
 PAGE MAIN
 */
+.page-main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main__header {
+  height: 47%;
+}
+
+.page-main__footer {
+  height: 3%;
+}
+
+.page-main__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.page-main__header span {
+  display: none;
+}
+
+.page-main__header img {
+  width: 272px;
+  height: auto;
+}
+
+.page-main__container {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/*
+FORM
+*/
+form.google-search__main-search {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 584px;
+}
+form.google-search__main-search fieldset {
+  max-width: 584px;
+  height: 48px;
+  border-radius: 24px;
+  border: 1px solid #dfe1e5;
+}
+
 /*
 PAGE FOOTER
 */
@@ -195,6 +244,9 @@ PAGE FOOTER
 }
 
 @media only screen and (min-width: 730px) {
+  .page-footer {
+    margin: 45px 0 0 0;
+  }
   .page-footer__info {
     display: flex;
     flex-direction: row;
