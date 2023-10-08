@@ -36,6 +36,11 @@ $light-theme_text-on-contrast-background: #70757a;
 /* buttons light theme */
 $light-theme_button-background-color: #f8f9fa;
 $light-theme_button-border-color: #f8f9fa;
+$light-theme_button_google-account: #1a73e8;
+$light-theme_button-text_google-account: #fff;
+
+/* generel vars */
+$button-border-radius: 4px;
 
 
 /* 
@@ -55,9 +60,86 @@ PAGE HEADER
 */
 
 .page-header {
-    height: 9%;
-    background-color: #70757a;
+    display: flex;
+    justify-content: right;
 }
+
+.page-header a,
+.page-header a:link,
+.page-header a:hover,
+.page-header a:active,
+.page-header a:visited {
+    color: $light-theme_text-general;
+    text-decoration: none;
+}
+
+.page-header a:hover,
+.page-header a:focus {
+    color: $light-theme_text-general;
+    text-decoration: underline;
+}
+
+.page-header ul {
+    display: flex;
+    justify-content: right;
+}
+
+.page-header ul li {
+    padding: 15px;
+    height: 37px;
+    line-height: 37px;
+    font-size: 1.4rem;
+}
+
+.page-header ul li.apps {
+    padding: 15px 0 15px 7px;
+}
+
+.page-header ul li.apps span {
+    display: none;
+}
+
+.page-header ul li.apps a {
+    background-image: url(assets/images/icon_applications.svg);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center center;
+    width: 37px;
+    height: 37px;
+    display: block;
+    border-radius: 37px;
+}
+
+.page-header ul li.apps a svg {
+    filter: invert(40%) sepia(10%) saturate(237%) hue-rotate(174deg) brightness(92%) contrast(90%);
+}
+
+.page-header ul li.apps a:hover,
+.page-header ul li.apps a:focus {
+    background-color: $light-theme_background-color-contrast;
+}
+
+.btn--sign-in {
+    padding: 9px 15px;
+    background-color: $light-theme_button_google-account;
+    color: $light-theme_button-text_google-account;
+    border-radius: $button-border-radius;
+    font-weight: bold;
+}
+
+a.btn--sign-in:link,
+a.btn--sign-in:active,
+a.btn--sign-in:visited {
+    color: $light-theme_button-text_google-account;
+    text-decoration: none;
+}
+
+a.btn--sign-in:hover,
+a.btn--sign-in:visited {
+    color: $light-theme_button-text_google-account;
+    text-decoration: underline;
+}
+
 
 /* 
 PAGE MAIN
