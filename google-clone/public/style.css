@@ -1,3 +1,10 @@
+/* 
+COLOURS
+*/
+/* colors light theme */
+/* buttons light theme */
+/* generel vars */
+/* forms */
 html {
   /* 62.5% of 16px browser font size is 10px */
   font-size: 62.5%;
@@ -23,13 +30,6 @@ ul li, ol li, dl dt, dl dd {
   list-style-image: none;
 }
 
-/* 
-VARS 
-*/
-/* colors light theme */
-/* buttons light theme */
-/* generel vars */
-/* forms */
 /* 
 GRID 
 */
@@ -195,6 +195,15 @@ form.google-search__main-search textarea {
   vertical-align: middle;
   overflow-y: hidden;
   padding: 13px;
+}
+form.google-search__main-search .fake-label {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+form.google-search__main-search .fake-label input {
+  border: 4px;
+  padding: 5px 16px;
 }
 
 .icon-search {

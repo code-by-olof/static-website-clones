@@ -1,3 +1,5 @@
+@use './vars' as var;
+
 html {
     /* 62.5% of 16px browser font size is 10px */
     font-size: 62.5%;
@@ -22,30 +24,6 @@ ul li, ol li, dl dt, dl dd {
     list-style-type: none;
     list-style-image: none;
 }
-
-/* 
-VARS 
-*/
-/* colors light theme */
-$light-theme_background-color: #fff;
-$light-theme_background-color-contrast: #f2f2f2;
-$light-theme_text-general: rgba(0,0,0,.87);
-$light-theme_text-button: #3c4043;
-$light-theme_text-on-contrast-background: #70757a;
-
-/* buttons light theme */
-$light-theme_button-background-color: #f8f9fa;
-$light-theme_button-border-color: #f8f9fa;
-$light-theme_button_google-account: #1a73e8;
-$light-theme_button-text_google-account: #fff;
-
-/* generel vars */
-$button-border-radius: 4px;
-$search-border-radius: 24px;
-
-/* forms */
-$border-color: #dfe1e5;
-
 
 /* 
 GRID 
@@ -73,13 +51,13 @@ PAGE HEADER
 .page-header a:hover,
 .page-header a:active,
 .page-header a:visited {
-    color: $light-theme_text-general;
+    color: var.$light-theme_text-general;
     text-decoration: none;
 }
 
 .page-header a:hover,
 .page-header a:focus {
-    color: $light-theme_text-general;
+    color: var.$light-theme_text-general;
     text-decoration: underline;
 }
 
@@ -116,27 +94,27 @@ PAGE HEADER
 
 .page-header ul li.apps a:hover,
 .page-header ul li.apps a:focus {
-    background-color: $light-theme_background-color-contrast;
+    background-color: var.$light-theme_background-color-contrast;
 }
 
 .btn--sign-in {
     padding: 9px 15px;
-    background-color: $light-theme_button_google-account;
-    color: $light-theme_button-text_google-account;
-    border-radius: $button-border-radius;
+    background-color: var.$light-theme_button_google-account;
+    color: var.$light-theme_button-text_google-account;
+    border-radius: var.$button-border-radius;
     font-weight: bold;
 }
 
 a.btn--sign-in:link,
 a.btn--sign-in:active,
 a.btn--sign-in:visited {
-    color: $light-theme_button-text_google-account;
+    color: var.$light-theme_button-text_google-account;
     text-decoration: none;
 }
 
 a.btn--sign-in:hover,
 a.btn--sign-in:visited {
-    color: $light-theme_button-text_google-account;
+    color: var.$light-theme_button-text_google-account;
     text-decoration: underline;
 }
 
@@ -195,8 +173,8 @@ form.google-search__main-search {
     fieldset {
         max-width: 584px;
         height: 48px;
-        border-radius: $search-border-radius;
-        border: 1px solid $border-color;
+        border-radius: var.$search-border-radius;
+        border: 1px solid var.$border-color;
         display: flex;      
     }
 
@@ -221,7 +199,21 @@ form.google-search__main-search {
         overflow-y: hidden;
         padding: 13px;
     }
+
+    .fake-label {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        input {
+            border: var.$button-border-radius;
+            padding: 5px 16px;
+        }
+
+    }
 }
+
+
 
 .icon-search {
     fill: #9aa0a6;
@@ -243,13 +235,13 @@ PAGE FOOTER
 */
 
 .page-footer {
-    background-color: $light-theme_background-color-contrast;
+    background-color: var.$light-theme_background-color-contrast;
 }
 
 .page-footer p,
 .page-footer ul li {
     font-size: 1.5rem;
-    color: $light-theme_text-on-contrast-background;
+    color: var.$light-theme_text-on-contrast-background;
 }
 
 .page-footer ul {
@@ -261,13 +253,13 @@ PAGE FOOTER
 .page-footer a:hover,
 .page-footer a:active,
 .page-footer a:visited {
-    color: $light-theme_text-on-contrast-background;
+    color: var.$light-theme_text-on-contrast-background;
     text-decoration: none;
 }
 
 .page-footer a:hover,
 .page-footer a:focus {
-    color: $light-theme_text-on-contrast-background;
+    color: var.$light-theme_text-on-contrast-background;
     text-decoration: underline;
 }
 
