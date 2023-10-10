@@ -173,15 +173,21 @@ form.google-search__main-search {
     fieldset {
         max-width: 584px;
         height: 48px;
-        border-radius: var.$search-border-radius;
-        border: 1px solid var.$border-color;
-        display: flex;      
+        display: flex; 
+        justify-content: center;
+        border: none; 
     }
 
-    fieldset:hover,
-    fieldset:focus {
-        box-shadow:0 1px 6px rgba(32,33,36,.28);
+    fieldset.main-search-input {
+        border-radius: var.$search-border-radius;
+        border: 1px solid var.$border-color;
+
+       &:hover,
+       &:focus {
+            box-shadow:0 1px 6px rgba(32,33,36,.28);
+        }
     }
+
 
     textarea {
         border: none;
@@ -200,20 +206,36 @@ form.google-search__main-search {
         padding: 13px;
     }
 
-    .fake-label {
-        width: 100%;
+    .center-container {
+        margin: 18px 0 0 0;
+        width: auto;
         display: flex;
-        justify-content: space-around;
-
-        input {
-            border: var.$button-border-radius;
-            padding: 5px 16px;
-        }
-
+        justify-content: space-between;
     }
+
+
+    input.start-search {
+        border-radius: var.$button-border-radius;
+        padding: 5px 16px;
+        margin: 11px 4px;
+        min-width: 54px;
+        margin: 11px 4px;
+        padding: 0 16px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        border: 2px solid var.$light-theme_button-light-color;
+    }
+
+    input.start-search:hover,
+    input.start-search:focus {
+        border: 2px solid var.$light-theme_button-light-border;
+    }
+
 }
-
-
 
 .icon-search {
     fill: #9aa0a6;
@@ -228,6 +250,7 @@ form.google-search__main-search {
     width: 32px;
     height: 32px;
 }
+
 
 
 /*

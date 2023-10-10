@@ -172,12 +172,15 @@ form.google-search__main-search {
 form.google-search__main-search fieldset {
   max-width: 584px;
   height: 48px;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+form.google-search__main-search fieldset.main-search-input {
   border-radius: 24px;
   border: 1px solid #dfe1e5;
-  display: flex;
 }
-form.google-search__main-search fieldset:hover,
-form.google-search__main-search fieldset:focus {
+form.google-search__main-search fieldset.main-search-input:hover, form.google-search__main-search fieldset.main-search-input:focus {
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
 }
 form.google-search__main-search textarea {
@@ -196,14 +199,30 @@ form.google-search__main-search textarea {
   overflow-y: hidden;
   padding: 13px;
 }
-form.google-search__main-search .fake-label {
-  width: 100%;
+form.google-search__main-search .center-container {
+  margin: 18px 0 0 0;
+  width: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-form.google-search__main-search .fake-label input {
-  border: 4px;
+form.google-search__main-search input.start-search {
+  border-radius: 4px;
   padding: 5px 16px;
+  margin: 11px 4px;
+  min-width: 54px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border: 2px solid #f8f9fa;
+}
+form.google-search__main-search input.start-search:hover,
+form.google-search__main-search input.start-search:focus {
+  border: 2px solid #eae7e7;
 }
 
 .icon-search {
