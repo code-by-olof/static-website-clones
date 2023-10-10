@@ -1,5 +1,7 @@
 @use './vars' as var;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html {
     /* 62.5% of 16px browser font size is 10px */
     font-size: 62.5%;
@@ -144,13 +146,22 @@ PAGE MAIN
     align-items: center;
 }
 
-.page-main__header span {
-    display: none;
-}
-
 .page-main__header img {
     width: 272px;
     height: auto;
+}
+
+.page-main__header h1.bilder a::after {
+    content: "Bilder";
+    font-family:'Roboto', sans-serif;
+    font-size: 1.6rem;   
+    color: var.$light-theme_button_google-account; 
+    text-decoration: none;
+    font-weight: normal;
+    border: none ;
+    display: inline-block;
+    position: relative;
+    left: -57px;
 }
 
 .page-main__container {
