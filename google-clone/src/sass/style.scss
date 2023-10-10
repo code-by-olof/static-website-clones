@@ -1,4 +1,8 @@
 @use './vars' as var;
+@use './forms';
+/* Pages */
+@use './search-home';
+@use './search-results';
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -45,8 +49,10 @@ PAGE HEADER
 
 .page-header {
     display: flex;
-    justify-content: right;
 }
+
+
+
 
 .page-header a,
 .page-header a:link,
@@ -171,167 +177,6 @@ PAGE MAIN
     justify-content: flex-start;
 }
 
-/*
-FORM
-*/
-
-
-form.google-search__main-search {
-    margin: 20px auto;
-    width: 90%;
-    max-width: 584px;
-
-    fieldset {
-        max-width: 584px;
-        height: 48px;
-        display: flex; 
-        justify-content: center;
-        border: none; 
-    }
-
-    fieldset.main-search-input {
-        border-radius: var.$search-border-radius;
-        border: 1px solid var.$border-color;
-
-       &:hover,
-       &:focus {
-            box-shadow:0 1px 6px rgba(32,33,36,.28);
-        }
-    }
-
-
-    textarea {
-        border: none;
-        display: flex;
-        resize: none;
-        color: rgba(0,0,0,.87);
-        word-wrap: break-word;
-        outline: none;
-        font-size: 1.6rem;
-        line-height: 1.9rem;
-        font-family: Arial, sans-serif;
-        background-color: transparent;
-        width: 100%;
-        vertical-align: middle;
-        overflow-y: hidden;
-        padding: 13px;
-    }
-
-    .center-container {
-        margin: 18px 0 0 0;
-        width: auto;
-        display: flex;
-        justify-content: space-between;
-    }
-
-
-    input.start-search {
-        border-radius: var.$button-border-radius;
-        padding: 5px 16px;
-        margin: 11px 4px;
-        min-width: 54px;
-        margin: 11px 4px;
-        padding: 0 16px;
-        line-height: 27px;
-        height: 36px;
-        min-width: 54px;
-        text-align: center;
-        cursor: pointer;
-        user-select: none;
-        border: 2px solid var.$light-theme_button-light-color;
-    }
-
-    input.start-search:hover,
-    input.start-search:focus {
-        border: 2px solid var.$light-theme_button-light-border;
-    }
-
-}
-
-.icon-search {
-    fill: #9aa0a6;
-    width: 30px;
-    height: 30px;
-    margin: 14px 0 0 12px;
-}
-
-.icon-camera,
-.icon-microphone {
-    margin: 10px 14px 0 0;
-    width: 32px;
-    height: 32px;
-}
-
-
-
-/*
-PAGE FOOTER
-*/
-
-.page-footer {
-    background-color: var.$light-theme_background-color-contrast;
-}
-
-.page-footer p,
-.page-footer ul li {
-    font-size: 1.5rem;
-    color: var.$light-theme_text-on-contrast-background;
-}
-
-.page-footer ul {
-    display: flex;
-}
-
-.page-footer a,
-.page-footer a:link,
-.page-footer a:hover,
-.page-footer a:active,
-.page-footer a:visited {
-    color: var.$light-theme_text-on-contrast-background;
-    text-decoration: none;
-}
-
-.page-footer a:hover,
-.page-footer a:focus {
-    color: var.$light-theme_text-on-contrast-background;
-    text-decoration: underline;
-}
-
-.page-footer__country {
-    border-bottom: 1px solid #dadce0;
-    padding: 15px 30px;
-}
-
-.page-footer__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.page-footer__clima-neutral,
-.page-footer__info__company-solutions,
-.page-footer__info__privacy-settings {
-    display: flex;
-    justify-content: center;
-}
-
-.page-footer__clima-neutral p {
-    padding: 15px 0;
-}
-
-.page-footer__clima-neutral p a {
-    background-image: url(assets/images/icon_clima-neutral.png);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 15px auto;
-    padding: 0 0 0 21px;
-}
-
-.page-footer__info__company-solutions ul li,
-.page-footer__info__privacy-settings ul li {
-    padding: 15px;
-}
-
 
 @media only screen and (min-width: 730px) {
 
@@ -345,3 +190,8 @@ PAGE FOOTER
         justify-content: space-around;
     }
 }
+
+
+
+
+

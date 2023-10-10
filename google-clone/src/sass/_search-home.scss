@@ -1,0 +1,75 @@
+@use './vars' as var;
+
+/* PAGE HEADER */
+
+.search-home .page-header {
+    justify-content: right;
+}
+
+
+/*  PAGE FOOTER */
+
+.search-home .page-footer {
+    background-color: var.$light-theme_background-color-contrast;
+}
+
+.search-home .page-footer p,
+.search-home .page-footer ul li {
+    font-size: 1.5rem;
+    color: var.$light-theme_text-on-contrast-background;
+}
+
+.search-home .page-footer ul {
+    display: flex;
+}
+
+.search-home .page-footer a,
+.search-home .page-footer a:link,
+.search-home .page-footer a:hover,
+.search-home .page-footer a:active,
+.search-home .page-footer a:visited {
+    color: var.$light-theme_text-on-contrast-background;
+    text-decoration: none;
+}
+
+.search-home .page-footer a:hover,
+.search-home .page-footer a:focus {
+    color: var.$light-theme_text-on-contrast-background;
+    text-decoration: underline;
+}
+
+.search-home .page-footer__country {
+    border-bottom: 1px solid #dadce0;
+    padding: 15px 30px;
+}
+
+.search-home .page-footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search-home .page-footer__clima-neutral,
+.search-home .page-footer__info__company-solutions,
+.search-home .page-footer__info__privacy-settings {
+    display: flex;
+    justify-content: center;
+}
+
+.search-home .page-footer__clima-neutral p {
+    padding: 15px 0;
+}
+
+.search-home .page-footer__clima-neutral p a {
+    background-image: url(assets/images/icon_clima-neutral.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 15px auto;
+    padding: 0 0 0 21px;
+}
+
+.search-home .page-footer__info__company-solutions ul li,
+.search-home .page-footer__info__privacy-settings ul li {
+    padding: 15px;
+}
+
