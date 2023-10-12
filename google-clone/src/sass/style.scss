@@ -1,5 +1,6 @@
 @use './vars' as var;
 @use './forms';
+
 /* Pages */
 @use './search-home';
 @use './search-results';
@@ -178,7 +179,7 @@ PAGE MAIN
 }
 
 
-@media only screen and (min-width: 730px) {
+@media only screen and (max-width: 730px) {
 
     .page-footer {
         margin: 45px 0 0 0;

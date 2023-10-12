@@ -8,8 +8,7 @@
 }
 
 
-.search-and-settings {
-    width: 100%;
+.search-results .search-and-settings {
     display: flex;
     height: 52px;
 
@@ -36,6 +35,55 @@
     &__google-account {
         align-self: center;
     }
+
+}
+
+
+@media only screen and (max-width: 1024px)  {
+
+    .search-results .search-and-settings {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr, 3fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "logo account account account"
+        "search search search search";
+    }
+    
+    .search-results  .search-and-settings__google-logo {
+            grid-area: logo;
+            order: 1;
+
+    }
+
+    .search-results .search-and-settings__google-account {
+            grid-area: account;
+            order: 2;
+
+            ul li:last-of-type {
+                padding-right: 0;
+            }
+    }   
+    
+
+    .search-results .search-and-settings__google-search {
+            grid-area: search;
+            display: flex;
+            order: 3;
+            padding: 0;
+            margin: 19px 0 0 0;
+
+            form.google-search__main-search {
+                padding: 0;
+                align-self: flex-start;
+                width: 100%;
+
+                fieldset {
+                   justify-content: flex-start;
+                }
+            }
+    }         
+    
 }
 
 /* PAGE MAIN */
