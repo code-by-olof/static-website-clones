@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 21px;
+    border-bottom: 1px solid var.$border-color;
 }
 
 
@@ -29,6 +30,10 @@
 
         form.google-search__main-search {
            align-self: center;
+           
+           fieldset {
+            box-shadow:0 1px 6px rgba(32,33,36,.28);
+           }
         }
     }
 
@@ -38,11 +43,50 @@
 
 }
 
+.filter-search-results {
+    width: 100%;
+    height: auto;
+    margin: 19px 0 19px 0;
+    padding: 0 0 0 129px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter {
+    border-radius: 24px;
+    padding:10px 14px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    border: 1px solid #dadce0;
+    margin: 0 7px 0 0;
+}
+
+.filter p {
+    align-self: center;
+    white-space: nowrap;
+}
+
+.filter p a,
+.filter p a:link,
+.filter p a:active,
+.filter p a:visited,
+.filter p a:hover,
+.filter p a:focus {
+    text-decoration: none;
+}
+
+.filter:hover,
+.filter:focus {
+    background-color: var.$light-theme_background-color-contrast;
+}
+
 
 @media only screen and (max-width: 1024px)  {
 
     .search-results .search-and-settings {
         display: grid;
+        height: 151px;
         grid-template-columns: repeat(2, 1fr, 3fr);
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas:
@@ -67,22 +111,31 @@
     
 
     .search-results .search-and-settings__google-search {
-            grid-area: search;
-            display: flex;
-            order: 3;
+        grid-area: search;
+        display: flex;
+        order: 3;
+        padding: 0;
+        margin: 19px 0 0 0;
+
+        form.google-search__main-search {
             padding: 0;
-            margin: 19px 0 0 0;
+            align-self: flex-start;
+            width: 100%;
 
-            form.google-search__main-search {
-                padding: 0;
-                align-self: flex-start;
-                width: 100%;
-
-                fieldset {
-                   justify-content: flex-start;
-                }
+            fieldset {
+                justify-content: flex-start;
             }
-    }         
+        }        
+    }
+
+    .filter-search-results {
+        padding: 0;
+        overflow: visible;
+    }
+
+    .filter {
+        margin-bottom: 7px;
+    }
     
 }
 
