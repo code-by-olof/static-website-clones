@@ -6,6 +6,7 @@ COLOURS
 /* buttons light theme */
 /* generel vars */
 /* forms */
+/* search results */
 /*
 ICONS
 */
@@ -165,6 +166,10 @@ ADVANCED SEARCH
   padding: 15px;
 }
 
+.search-results .page-container {
+  justify-content: flex-start;
+}
+
 /*  PAGE HEADER */
 .search-results .page-header {
   flex-direction: column;
@@ -203,7 +208,7 @@ ADVANCED SEARCH
 .filter-search-results {
   width: 100%;
   height: auto;
-  margin: 19px 0 19px 0;
+  margin: 19px 0 0 0;
   padding: 0 0 0 129px;
   display: flex;
   flex-wrap: wrap;
@@ -236,6 +241,43 @@ ADVANCED SEARCH
 .filter:hover,
 .filter:focus {
   background-color: #f2f2f2;
+}
+
+/* PAGE BODY */
+.page-body {
+  justify-content: flex-start;
+}
+
+.search-results-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  height: 6rem;
+  margin: 19px 0 0 0;
+  padding: 0 0 0 142px;
+  color: #70757a;
+}
+
+.search-results-info p strong {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.search-results-info p a {
+  color: #1a0dab;
+}
+
+.search-results-info p a,
+.search-results-info p a:link,
+.search-results-info p a:hover,
+.search-results-info p a:active,
+.search-results-info p a:visited {
+  text-decoration: none;
+}
+
+.search-results-info p a:hover,
+.search-results-info p a:focus {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 1024px) {

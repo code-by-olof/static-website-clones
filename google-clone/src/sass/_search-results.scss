@@ -1,5 +1,9 @@
 @use './vars' as var;
 
+.search-results .page-container {
+    justify-content: flex-start;
+}
+
 /*  PAGE HEADER */
 .search-results .page-header {
     flex-direction: column;
@@ -46,7 +50,7 @@
 .filter-search-results {
     width: 100%;
     height: auto;
-    margin: 19px 0 19px 0;
+    margin: 19px 0 0 0;
     padding: 0 0 0 129px;
     display: flex;
     flex-wrap: wrap;
@@ -81,6 +85,42 @@
     background-color: var.$light-theme_background-color-contrast;
 }
 
+/* PAGE BODY */
+.page-body {
+    justify-content: flex-start;
+}
+
+.search-results-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    height: 6rem;
+    margin: 19px 0 0 0;
+    padding: 0 0 0 142px;
+    color: var.$light-theme_text-on-contrast-background;
+}
+
+.search-results-info p strong {
+    color: var.$light-theme_text-general;
+}
+
+.search-results-info p a {
+    color: var.$text_color_link;
+}
+
+.search-results-info p a,
+.search-results-info p a:link,
+.search-results-info p a:hover,
+.search-results-info p a:active,
+.search-results-info p a:visited {
+    text-decoration: none;
+}
+
+.search-results-info p a:hover,
+.search-results-info p a:focus {
+    text-decoration: underline;
+}
 
 @media only screen and (max-width: 1024px)  {
 
