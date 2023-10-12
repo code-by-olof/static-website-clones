@@ -101,6 +101,12 @@
     color: var.$light-theme_text-on-contrast-background;
 }
 
+.search-results-info p.search-results-info__area::before {
+    content: '●';
+    padding: 0 7px 0 0;
+    color: var.$light-theme_button_google-account;
+}
+
 .search-results-info p strong {
     color: var.$light-theme_text-general;
 }
