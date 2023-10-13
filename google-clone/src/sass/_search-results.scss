@@ -304,7 +304,8 @@
 
             .question {
                 font-size: 1.6rem;
-                font-size: #202124;
+                font-size: #4d5156;
+                cursor: pointer;
             }
         }
 
@@ -312,7 +313,30 @@
             background-image: url(assets/images/icon_closed.svg);
             background-repeat: no-repeat;
             background-position: right top;
-            background-size: 2.5rem auto;   
+            background-size: 2.5rem auto;
+            
+            .answer {
+                display: none;
+            }
+        }
+
+        dd.opened {
+            display: block;
+        }
+
+        .answer {
+
+            margin: 19px 0 0 0;
+
+            &-title ,
+            &-content {
+                    font-size: 1.6rem;
+                    color: #4d5156;
+            }
+
+            &-content {
+                margin: 19px 0 29px 0;
+            }            
         }
 
         .recommended-page {

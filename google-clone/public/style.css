@@ -438,13 +438,30 @@ ADVANCED SEARCH
 }
 .search-results-container--people-asked dl dd .question {
   font-size: 1.6rem;
-  font-size: #202124;
+  font-size: #4d5156;
+  cursor: pointer;
 }
 .search-results-container--people-asked dl dd.closed {
   background-image: url(assets/images/icon_closed.svg);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 2.5rem auto;
+}
+.search-results-container--people-asked dl dd.closed .answer {
+  display: none;
+}
+.search-results-container--people-asked dl dd.opened {
+  display: block;
+}
+.search-results-container--people-asked dl .answer {
+  margin: 19px 0 0 0;
+}
+.search-results-container--people-asked dl .answer-title, .search-results-container--people-asked dl .answer-content {
+  font-size: 1.6rem;
+  color: #4d5156;
+}
+.search-results-container--people-asked dl .answer-content {
+  margin: 19px 0 29px 0;
 }
 .search-results-container--people-asked dl .recommended-page {
   display: flex;
