@@ -191,6 +191,38 @@
     }
 }
 
+.top-result {    
+    margin: 7px 0 0 0;
+    &__title {
+        font-size: 2rem;
+        margin: 0 0 3px 0;        
+
+        a,
+        a:visited,
+        a:active {
+            text-decoration: none;
+            color: var.$text_color_link
+        }
+
+        :hover,
+        :focus {
+            text-decoration: underline;
+            color: var.$text_color_link
+        }
+    }
+
+    &__subtitle {
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        color: #4d5156;
+    }
+
+    dd {
+        margin: 19px 0 0 0;
+        padding: 0 0 0 13px;
+    }
+}
+
 
 
 @media only screen and (max-width: 1024px)  {

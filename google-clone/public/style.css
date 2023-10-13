@@ -340,6 +340,34 @@ ADVANCED SEARCH
   font-weight: normal;
 }
 
+.top-result {
+  margin: 7px 0 0 0;
+}
+.top-result__title {
+  font-size: 2rem;
+  margin: 0 0 3px 0;
+}
+.top-result__title a,
+.top-result__title a:visited,
+.top-result__title a:active {
+  text-decoration: none;
+  color: #1a0dab;
+}
+.top-result__title :hover,
+.top-result__title :focus {
+  text-decoration: underline;
+  color: #1a0dab;
+}
+.top-result__subtitle {
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: #4d5156;
+}
+.top-result dd {
+  margin: 19px 0 0 0;
+  padding: 0 0 0 13px;
+}
+
 @media only screen and (max-width: 1024px) {
   .search-results .search-and-settings {
     display: grid;
