@@ -385,6 +385,17 @@ ADVANCED SEARCH
   margin: 0 0 0 7px;
   color: #4d5156;
 }
+.top-result form fieldset input[type=text] {
+  width: 50%;
+  line-height: 2.55rem;
+  border: none;
+  margin: 0 0 0 7px;
+}
+.top-result form fieldset input[type=text]:focus {
+  border: none;
+  background-color: none;
+  outline: none;
+}
 .top-result form fieldset button.search-in-results {
   background-image: url(assets/images/icon_search.svg);
   background-repeat: no-repeat;
