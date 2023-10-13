@@ -221,6 +221,28 @@
         margin: 19px 0 0 0;
         padding: 0 0 0 13px;
     }
+
+    form {
+        width: 100%;
+
+        fieldset {
+            border: 1px solid #d9d9d9;
+            height: 2.7rem;
+            border-radius: 7px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            label {
+                font-size: 1.2rem;
+                line-height: 2.7rem;
+                margin: 0 0 0 7px;
+                color: #4d5156;
+            }
+        }
+
+    }
 }
 
 

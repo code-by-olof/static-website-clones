@@ -46,15 +46,15 @@
 				</div>                
             </div>
             <div class="filter-search-results">
-				<div class="filter"><p><a href="#" title="Bilder">Bilder</a></p></div>
-				<div class="filter"><p><a href="#" title="Nyheter">Nyheter</a></p></div>
-				<div class="filter"><p><a href="#" title="Referens">Referens</a></p></div>
-				<div class="filter"><p><a href="#" title="Tution">Tution</a></p></div>
-				<div class="filter"><p><a href="#" title="Videor">Videor</a></p></div>
-				<div class="filter"><p><a href="#" title="Medical School">Medical School</a></p></div>
-				<div class="filter"><p><a href="#" title="Källhänvisning">Källhänvisning</a></p></div>
-				<div class="filter"><p><a href="#" title="University">University</a></p></div>
-				<div class="filter"><p><a href="#" title="Kator">Kator</a></p></div>
+				<div role="button" class="filter"><p><a href="#" title="Bilder">Bilder</a></p></div>
+				<div role="button" class="filter"><p><a href="#" title="Nyheter">Nyheter</a></p></div>
+				<div role="button" class="filter"><p><a href="#" title="Referens">Referens</a></p></div>
+				<div role="button" class="filter"><p><a href="#" title="Tution">Tution</a></p></div>
+				<div role="button" class="filter"><p><a href="#" title="Videor">Videor</a></p></div>
+				<div role="button" class="filter"><p><a href="#" title="Medical School">Medical School</a></p></div>
+				<div role="button" class="filter"><p><a href="#" title="Källhänvisning">Källhänvisning</a></p></div>
+				<div role="button" class="filter"><p><a href="#" title="University">University</a></p></div>
+				<div role="button" class="filter"><p><a href="#" title="Kator">Kator</a></p></div>
 			</div>
         </div>
         <div class="page-body">
@@ -76,7 +76,15 @@
 								<p class="top-result__title"><a href="#">Harvard University</a></p>
 								<p class="top-result__subtitle"><strong>Harvard</strong> University is devoted to excellence in teaching, learning, and research, and to developing leaders who make a difference globally.</p>
 							</dt>
-							<dd>FORM</dd>
+							<dd>
+								<form>
+									<fieldset>
+										<label>Results from harvard.edu</label>
+										<input type="text" id="search-in-results" value="" />
+										<button type="submit"><img src="assets/images/icon_search.svg" /></button>
+									</fieldset>
+								</form>
+							</dd>
 							<dd>
 								<p class="top-result__title"><a href="#">Programs</a></p>
 								<p class="top-result__subtitle">Browse the graduate and undergraduate degrees offered ...</p>								
