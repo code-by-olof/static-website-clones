@@ -240,6 +240,32 @@
                 margin: 0 0 0 7px;
                 color: #4d5156;
             }
+
+            button.search-in-results {
+                background-image: url(assets/images/icon_search.svg);
+                background-repeat: no-repeat;
+                background-size: 2rem 2rem;
+                background-position: center center;
+                width: 6rem;
+                height: 2.6rem;
+                border-left: 1px solid #d9d9d9;
+                border-right: none;
+                border-top: none;
+                border-bottom: none;
+                background-color: white;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+
+                span {
+                    display: none;
+                }
+            }
+
+            button.search-in-results:hover,
+            button.search-in-results:focus {
+                background-color: #d9d9d9;
+                cursor: pointer;
+            }
         }
 
     }
