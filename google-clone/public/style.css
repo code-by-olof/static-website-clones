@@ -302,6 +302,44 @@ ADVANCED SEARCH
   width: 40%;
 }
 
+.search-results-container--top-result header {
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  flex-direction: row;
+}
+.search-results-container--top-result header .search-results-container--top-result--favicon {
+  border: 1px solid #eae7e7;
+  height: 31px;
+  width: 37px;
+  border-radius: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-results-container--top-result header .search-results-container--top-result--favicon img {
+  width: 29px;
+  height: 29px;
+}
+.search-results-container--top-result header h1 {
+  margin: 0 0 0 11px;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+.search-results-container--top-result header h1 span {
+  font-size: 1.2rem;
+}
+.search-results-container--top-result header h1 span a,
+.search-results-container--top-result header h1 span a:link,
+.search-results-container--top-result header h1 span a:active,
+.search-results-container--top-result header h1 span a:visited,
+.search-results-container--top-result header h1 span a:active,
+.search-results-container--top-result header h1 span a:hover,
+.search-results-container--top-result header h1 span a:focus {
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+  font-weight: normal;
+}
+
 @media only screen and (max-width: 1024px) {
   .search-results .search-and-settings {
     display: grid;
