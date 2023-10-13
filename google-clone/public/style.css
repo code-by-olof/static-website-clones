@@ -207,7 +207,6 @@ ADVANCED SEARCH
 }
 
 .filter-search-results {
-  width: 100%;
   height: auto;
   margin: 19px 0 0 0;
   padding: 0 0 0 129px;
@@ -246,6 +245,8 @@ ADVANCED SEARCH
 
 /* PAGE BODY */
 .page-body {
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
 }
 
@@ -289,11 +290,10 @@ ADVANCED SEARCH
 
 .search-results-container {
   width: 82%;
-  margin: 19px auto 0 auto;
-  height: 500px;
+  margin: 29px auto 0px auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  background-color: lightgrey;
 }
 .search-results-container main {
   width: 50%;
@@ -342,6 +342,16 @@ ADVANCED SEARCH
   }
   .filter {
     margin-bottom: 7px;
+  }
+  .search-results-container {
+    flex-direction: column;
+  }
+  .search-results-container main,
+  .search-results-container aside {
+    width: 100%;
+  }
+  .search-results-container aside {
+    margin: 37px 0 0 0;
   }
 }
 /* PAGE MAIN */
