@@ -86,7 +86,8 @@ PAGE HEADER
     padding: 15px 0 15px 7px;
 }
 
-.page-header ul li.apps span {
+.page-header ul li.apps span,
+.page-header ul li.settings span  {
     display: none;
 }
 
@@ -101,8 +102,21 @@ PAGE HEADER
     border-radius: 37px;
 }
 
+.page-header ul li.settings a {
+    background-image: url(assets/images/icon-settings.svg);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center center;
+    width: 37px;
+    height: 37px;
+    display: block;
+    border-radius: 37px;
+}
+
 .page-header ul li.apps a:hover,
-.page-header ul li.apps a:focus {
+.page-header ul li.apps a:focus,
+.page-header ul li.settings a:hover,
+.page-header ul li.settings a:focus {
     background-color: var.$light-theme_background-color-contrast;
 }
 
@@ -191,7 +205,6 @@ PAGE MAIN
         justify-content: space-around;
     }
 }
-
 
 
 
