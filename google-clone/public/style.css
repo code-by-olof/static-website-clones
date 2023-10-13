@@ -420,6 +420,75 @@ ADVANCED SEARCH
   cursor: pointer;
 }
 
+.search-results-container--people-asked {
+  margin: 57px 0 57px 0;
+}
+.search-results-container--people-asked dl {
+  width: 100%;
+}
+.search-results-container--people-asked dl dt {
+  color: #202124;
+  font-size: 2.2rem;
+  margin: 0 0 10px 0;
+}
+.search-results-container--people-asked dl dd {
+  padding: 10px 0 10px 0;
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+}
+.search-results-container--people-asked dl dd .question {
+  font-size: 1.6rem;
+  font-size: #202124;
+}
+.search-results-container--people-asked dl dd.closed {
+  background-image: url(assets/images/icon_closed.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 2.5rem auto;
+}
+.search-results-container--people-asked dl .recommended-page {
+  display: flex;
+  justify-content: flex-start;
+}
+.search-results-container--people-asked dl .recommended-page__favicon {
+  width: 29px;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #eae7e7;
+  border-radius: 29px;
+  overflow: hidden;
+  margin: 0 11px 0 0;
+}
+.search-results-container--people-asked dl .recommended-page__favicon img {
+  width: 40px;
+  height: auto;
+  align-self: center;
+}
+.search-results-container--people-asked dl .recommended-page__container__title {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #202124;
+}
+.search-results-container--people-asked dl .recommended-page__container__breadcrump {
+  font-size: 1.2rem;
+  color: #4d5156;
+}
+.search-results-container--people-asked dl .recommended-page__link {
+  margin: 7px 0 0 0;
+  font-size: 2rem;
+  color: #1A0DAB;
+}
+.search-results-container--people-asked dl .recommended-page__link a:link,
+.search-results-container--people-asked dl .recommended-page__link a:active,
+.search-results-container--people-asked dl .recommended-page__link a:visited {
+  text-decoration: none;
+}
+.search-results-container--people-asked dl .recommended-page__link a:hover,
+.search-results-container--people-asked dl .recommended-page__link a:focus {
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 1024px) {
   .search-results .search-and-settings {
     display: grid;
