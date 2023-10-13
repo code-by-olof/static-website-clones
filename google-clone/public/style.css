@@ -287,6 +287,21 @@ ADVANCED SEARCH
   text-decoration: underline;
 }
 
+.search-results-container {
+  width: 82%;
+  margin: 19px auto 0 auto;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgrey;
+}
+.search-results-container main {
+  width: 50%;
+}
+.search-results-container aside {
+  width: 40%;
+}
+
 @media only screen and (max-width: 1024px) {
   .search-results .search-and-settings {
     display: grid;
