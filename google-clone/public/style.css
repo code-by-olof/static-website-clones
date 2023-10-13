@@ -289,8 +289,8 @@ ADVANCED SEARCH
 }
 
 .search-results-container {
-  width: 82%;
-  margin: 29px auto 0px auto;
+  width: calc(100% - 143px);
+  margin: 29px 0 0 143px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -381,8 +381,13 @@ ADVANCED SEARCH
   .filter {
     margin-bottom: 7px;
   }
+  .search-results-info {
+    padding: 0 0 0 21px;
+  }
   .search-results-container {
     flex-direction: column;
+    margin: 0;
+    padding: 29px 0 0 21px;
   }
   .search-results-container main,
   .search-results-container aside {

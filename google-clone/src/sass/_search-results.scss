@@ -130,8 +130,8 @@
 }
 
 .search-results-container {
-    width: 82%;
-    margin: 29px auto 0px auto;
+    width: calc(100% - 143px);
+    margin: 29px 0 0 143px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -218,8 +218,7 @@
             ul li:last-of-type {
                 padding-right: 0;
             }
-    }   
-    
+    }       
 
     .search-results .search-and-settings__google-search {
         grid-area: search;
@@ -247,9 +246,15 @@
     .filter {
         margin-bottom: 7px;
     }
+
+    .search-results-info {
+        padding: 0 0 0 21px;
+    }    
     
     .search-results-container  {
         flex-direction: column;
+        margin: 0;
+        padding: 29px 0 0 21px;
 
         main,
         aside {
