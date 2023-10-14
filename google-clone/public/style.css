@@ -517,7 +517,7 @@ ADVANCED SEARCH
  TOP STORIES
 */
 .search-results-container--top-stories {
-  margin: 0 0 57px 0;
+  margin: 0 0 87px 0;
 }
 
 .top-stories__title {
@@ -660,6 +660,7 @@ hr {
 }
 
 .result {
+  margin: 0 0 41px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -772,6 +773,7 @@ hr {
     flex-direction: column;
     margin: 0;
     padding: 29px 0 0 21px;
+    width: calc(100% - 58px);
   }
   .search-results-container main,
   .search-results-container aside {
@@ -784,6 +786,25 @@ hr {
   .top-stories__story-list ul {
     display: flex;
     flex-direction: column;
+  }
+  .top-stories__story-list ul li {
+    padding: 10px 10px 10px 0;
+    width: calc(100% - 10px);
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eae7e7;
+    border-right: 0;
+  }
+  .top-stories__story-list ul li:nth-child(even) {
+    padding: 10px 10px 10px 0;
+    width: calc(100% - 10px);
+  }
+  /* More results */
+  .result__website-image {
+    display: none;
+  }
+  .page__decsription {
+    width: 100%;
   }
 }
 /* PAGE FOOTER */
