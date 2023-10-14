@@ -510,6 +510,49 @@
     }
 }
 
+.more-top-stories {
+    margin: 19px 0 0 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 300px;
+        height: 30px;
+        background-color: #dadce0;
+        border-radius: 18px;
+
+        p {
+            font-size: 1.4rem;
+            background-image: url(assets/images/icon_go.svg);
+            background-repeat: no-repeat;
+            background-position: right center;
+            padding: 0 21px 0 0;
+        }
+    }
+}
+
+.more-top-stories__button:hover,
+.more-top-stories__button:focus {
+    background-color: #c5c5c5;
+    cursor: pointer;
+}
+
+hr {
+    background-color: #dadce0;
+    height: 1px;
+    border: 0;
+    position: relative;
+    margin-top: -16px;
+    z-index: -1;
+}
+
 
 
 
