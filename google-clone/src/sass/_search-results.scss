@@ -403,16 +403,110 @@
 
 }
 
+/*
+ TOP STORIES
+*/
 
+.search-results-container--top-stories {
+    margin: 0 0 57px 0;
+}
 
 .top-stories__title {
     display: flex;
     justify-content: flex-start;
     height: 22px;
-    font-size: 2.2rem;
+    font-size: 2.2rem;    
 
     svg {
         margin: 0 11px 0 0;
+    }
+}
+
+.top-stories__story-list ul {
+    margin: 29px 0 0 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+}
+
+.top-stories__story-list ul li {
+    padding: 10px 10px 10px 0;
+    width: calc(100% - 10px);
+    display: flex;   
+    justify-content: space-between; 
+    border-top: 1px solid var.$light-theme_button-light-border;
+    border-right: 1px solid var.$light-theme_button-light-border;
+}
+.top-stories__story-list ul li:nth-child(even) {
+    border-right: 1px solid white; 
+    padding: 10px;
+    width: calc(100% - 20px);
+}
+
+
+.the-story {
+    width: 57%;
+
+    &__src {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        color: #202124;
+    }
+
+    &__heading {
+        margin: 7px 0;
+        font-size: 1.6rem;
+        color: #1A0DAB;
+    }
+
+    &__published {
+        font-size: 1.4rem;
+        color: #70757A;
+    }
+}
+
+.story_01 .the-story_-src {
+    background-image: url(assets/images/fav_cnn.png);
+    background-repeat: no-repeat;
+    background-position:  left center;
+    background-size: 14px auto;
+    padding: 0 0 0 20px;
+}
+
+.story_02 .the-story_-src {
+    background-image: url(assets/images/fav_harvard-crimson.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 14px auto;
+    padding: 0 0 0 21px;
+}
+
+.story_03 .the-story_-src {
+    background-image: url(assets/images/fav_harvard.png);
+    background-repeat: no-repeat;
+    background-position:  left center;
+    background-size: 14px auto;
+    padding: 0 0 0 21px;
+}
+
+.story_04 .the-story_-src {
+    background-image: url(assets/images/fav_ny-post.png);
+    background-repeat: no-repeat;
+    background-position:  left center;
+    background-size: auto 13px;
+    width: 100%;
+    height: 13px;    
+}
+
+
+.the-story__img {
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+        width: 92px;
+        height: 92px;
+        border-radius: 7px;
     }
 }
 
@@ -491,5 +585,12 @@
             margin: 37px 0 0 0;
         }
     }
+
+    /* Top stories */
+    .top-stories__story-list ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 /* PAGE FOOTER */
