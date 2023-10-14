@@ -394,7 +394,7 @@ ADVANCED SEARCH
 }
 .top-result form fieldset input[type=text]:focus {
   border: none;
-  background-color: none;
+  background: none;
   outline: none;
 }
 .top-result form fieldset button.search-in-results {
@@ -439,7 +439,7 @@ ADVANCED SEARCH
 }
 .search-results-container--people-asked .question {
   font-size: 1.6rem;
-  font-size: #4d5156;
+  color: #4d5156;
   cursor: pointer;
 }
 .search-results-container--people-asked .closed {
@@ -617,7 +617,7 @@ ADVANCED SEARCH
   .search-results .search-and-settings {
     display: grid;
     height: 151px;
-    grid-template-columns: repeat(2, 1fr, 3fr);
+    grid-template-columns: repeat(2, 1fr 3fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "logo account account account" "search search search search";
   }
