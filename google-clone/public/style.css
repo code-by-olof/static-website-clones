@@ -655,6 +655,75 @@ hr {
 }
 
 /* MORE SEARCH RESULTS */
+.search-results-container--more-results {
+  margin: 0 0 57px 0;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+}
+
+.preview__website-shortlink__page {
+  display: flex;
+  flex-direction: column;
+}
+
+.result__website-shortlink {
+  display: flex;
+}
+
+.website-shortlink__website-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.website-shortlink__fav {
+  width: 23px;
+  height: 23px;
+  border-radius: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ecedef;
+  background-color: #f1f3f4;
+  overflow: hidden;
+  margin: 0 7px 0 0;
+}
+.website-shortlink__fav img {
+  width: 14px;
+  height: 14px;
+}
+
+.website-shortlink__name {
+  font-size: 1.4rem;
+  color: #202124;
+  margin: 0 0 3px 0;
+}
+
+.website-shortlink__breadcrump {
+  font-size: 1.2rem;
+  color: #4d5156;
+  margin: 0 0 7px 0;
+}
+
+.page__title {
+  color: #1A0DAB;
+  font-size: 2rem;
+  margin: 0 0 3px 0;
+}
+
+.page__decsription {
+  color: #4d5156;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  width: 90%;
+}
+
+.result__website-image img {
+  border-radius: 9px;
+}
+
 @media only screen and (max-width: 1024px) {
   .search-results .search-and-settings {
     display: grid;
