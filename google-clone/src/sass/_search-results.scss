@@ -637,56 +637,6 @@ aside {
     padding: 0 37px 0 0;
 }
 
-.result-info-box {
-    border: 1px solid #dadce0;
-    border-radius: 8px;
-    background-image: url(assets/images/aside_header.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: auto 179px;
-    overflow: hidden;
-    height: auto;
-}
-
-.result-info-box header {
-    margin: 199px 0 19px 19px;
-
-    p.title {
-        font-size: 2.8rem;
-        color: #202124;
-    }
-}
-
-.first-actions {
-    display: flex;
-    justify-content: flex-start;
-    margin: 0 0 19px 0;
-}
-
-.first-actions_button {
-    margin: 11px 11px 0 0;
-    padding: 5px 11px;
-    display: inline-block;
-    color: #3c4043;
-    background-color: #f5f5f5;
-    font-size: 1.1rem;
-    line-height: 1.7rem;
-    font-weight: bold;
-    border: 1px solid #dadce0
-}
-
-.first-actions_button:hover,
-.first-actions_button:focus {
-    border-bottom: 1.3px solid #c7c7c7;
-}
-
-.first-actions_button a,
-.first-actions_button a:link,
-.first-actions_button a:active,
-.first-actions_button a:visited {
-    color: #3c4043;
-    text-decoration: none;
-}
 
 
 @media only screen and (max-width: 1024px)  {
