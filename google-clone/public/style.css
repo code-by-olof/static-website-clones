@@ -832,7 +832,9 @@ form
 */
 form.advanced-search {
   width: 75%;
+  height: 300px;
   margin: 0 0 0 60px;
+  background-color: orange;
 }
 
 form.advanced-search,
@@ -844,6 +846,8 @@ form.advanced-search fieldset label {
 form.advanced-search fieldset legend {
   color: #333;
   font-size: 1.6rem;
+  width: 19%;
+  background-color: skyblue;
 }
 
 html {
