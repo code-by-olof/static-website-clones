@@ -827,6 +827,25 @@ aside {
   margin: 0 0 0 45px;
 }
 
+/*
+form
+*/
+form.advanced-search {
+  width: 75%;
+  margin: 0 0 0 60px;
+}
+
+form.advanced-search,
+form.advanced-search fieldset,
+form.advanced-search fieldset label {
+  border: none;
+}
+
+form.advanced-search fieldset legend {
+  color: #333;
+  font-size: 1.6rem;
+}
+
 html {
   /* 62.5% of 16px browser font size is 10px */
   font-size: 62.5%;

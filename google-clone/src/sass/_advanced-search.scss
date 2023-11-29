@@ -9,3 +9,23 @@
 .page-footer.advanced-search .page-footer__info__privacy-settings ul {
     margin: 0 0 0 45px;
 }
+
+/*
+form
+*/
+
+form.advanced-search {
+    width: 75%;
+    margin: 0 0 0 60px;
+}
+
+form.advanced-search,
+form.advanced-search fieldset,
+form.advanced-search fieldset label {
+    border: none;
+}
+
+form.advanced-search fieldset legend {
+    color: #333;
+    font-size: 1.6rem;
+}
