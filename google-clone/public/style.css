@@ -834,7 +834,6 @@ form.advanced-search {
   width: 75%;
   height: 300px;
   margin: 0 0 0 60px;
-  background-color: orange;
 }
 
 form.advanced-search,
@@ -852,7 +851,6 @@ form.advanced-search fieldset legend {
   color: #333;
   font-size: 1.6rem;
   width: 17%;
-  background-color: skyblue;
 }
 
 .fieldset-header span {
@@ -877,12 +875,17 @@ form.advanced-search fieldset legend {
 
 .fieldset-row input {
   width: 50%;
+  height: 25px;
+  border: 1px solid #d9d9d9;
 }
 
 .fieldset-row label,
 .fieldset-row .searchfield-description {
   color: #222;
   font-size: 1.3rem;
+  height: 25px;
+  line-height: 2.5rem;
+  vertical-align: middle;
 }
 
 .fieldset-row .searchfield-description {
@@ -901,7 +904,6 @@ form.advanced-search fieldset legend {
   form.advanced-search fieldset legend,
   .fieldset-row label {
     width: 167px;
-    background-color: skyblue;
   }
   .fieldset-row .searchfield-description,
   .fieldset-header span {
@@ -909,6 +911,9 @@ form.advanced-search fieldset legend {
   }
   .fieldset-row {
     justify-content: flex-start;
+  }
+  .fieldset-row input {
+    width: 65%;
   }
 }
 html {
