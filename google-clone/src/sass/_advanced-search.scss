@@ -27,12 +27,57 @@ form.advanced-search fieldset label {
     border: none;
 }
 
+.fieldset-header {
+    display: flex;
+    justify-content: space-between;
+}
+
 form.advanced-search fieldset legend {
     color: #333;
     font-size: 1.6rem;
     width: 17%;
     background-color: skyblue;
 }
+
+.fieldset-header span {
+    width: 31%;
+    color: #777;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.fieldset-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fieldset-row label {
+    width: 17%;
+}
+
+.fieldset-row .searchfield-description {
+    width: 31%;
+}
+
+.fieldset-row input {
+    width: 50%;
+}
+
+
+.fieldset-row label,
+.fieldset-row .searchfield-description {
+    color: #222;
+    font-size: 1.3rem;
+}
+
+.fieldset-row .searchfield-description {
+    font-size: 1.1rem;
+}
+.fieldset-row .searchfield-description span {
+    font-family: monospace;
+}
+
+
 
 @media only screen and (max-width: 1024px) {
 
@@ -41,9 +86,19 @@ form.advanced-search fieldset legend {
         width: calc(100% - 120px);
     }
 
-    form.advanced-search fieldset legend  {
-        width: 35%;
-        max-width: 167px;
+    form.advanced-search fieldset legend,
+    .fieldset-row label  {
+        width: 167px;
         background-color: skyblue;
+    }
+
+
+    .fieldset-row .searchfield-description,
+    .fieldset-header span  {
+        display: none;
+    }
+
+    .fieldset-row {
+        justify-content: flex-start;
     }
 }
