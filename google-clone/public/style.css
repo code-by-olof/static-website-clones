@@ -815,6 +815,18 @@ aside {
   }
 }
 /* PAGE FOOTER */
+.page-footer.advanced-search .page-footer__country {
+  padding: 15px 60px;
+}
+
+.page-footer.advanced-search .page-footer__info__privacy-settings {
+  justify-content: flex-start;
+}
+
+.page-footer.advanced-search .page-footer__info__privacy-settings ul {
+  margin: 0 0 0 45px;
+}
+
 html {
   /* 62.5% of 16px browser font size is 10px */
   font-size: 62.5%;
