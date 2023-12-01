@@ -87,6 +87,14 @@ form.advanced-search fieldset legend span.title_info-col {
     font-family: monospace;
 }
 
+.several-input-fields {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 47%;
+}
+
+
 
 
 @media only screen and (max-width: 1024px) {
@@ -111,7 +119,12 @@ form.advanced-search fieldset legend span.title_info-col {
         justify-content: flex-start;
     }
 
-    .fieldset-row input {
+    .fieldset-row input,
+    .several-input-fields {
         width: calc(100% - 170px);
+    }
+
+    .several-input-fields input {
+        width: 45%;
     }
 }
