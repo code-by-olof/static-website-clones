@@ -26,6 +26,11 @@ form.advanced-search fieldset label {
     border: none;
 }
 
+form.advanced-search fieldset {
+    padding: 0 0 23px 0;
+    border-bottom:1px solid #ebebeb;
+}
+
 legend {
     width: 100%;
     display: flex;
