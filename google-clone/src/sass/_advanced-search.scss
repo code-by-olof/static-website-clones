@@ -32,14 +32,14 @@ legend {
     justify-content: space-between;
 }
 
-form.advanced-search fieldset legend p {
+form.advanced-search fieldset legend .legend_title {
     color: #333;
     font-size: 1.6rem;
     width: 17%;
     padding: 0 0 15px 0;
 }
 
-form.advanced-search fieldset legend span {
+form.advanced-search fieldset legend span.title_info-col {
     width: 33%;
     color: #777;
     font-size: 1.3rem;
@@ -92,14 +92,14 @@ form.advanced-search fieldset legend span {
         width: calc(100% - 120px);
     }
 
-    form.advanced-search fieldset legend p,
+    form.advanced-search fieldset legend .legend_title,
     .fieldset-row label  {
         width: 170px;
     }
 
 
     .fieldset-row .searchfield-description,
-    form.advanced-search fieldset legend span  {
+    form.advanced-search fieldset legend span.title_info-col  {
         display: none;
     }
 
