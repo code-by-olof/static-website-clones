@@ -28,16 +28,15 @@ form.advanced-search fieldset label {
 
 legend {
     width: 100%;
-    background-color: skyblue;
     display: flex;
     justify-content: space-between;
-    margin: 0 0 25px 0;
 }
 
 form.advanced-search fieldset legend p {
     color: #333;
     font-size: 1.6rem;
     width: 17%;
+    padding: 0 0 15px 0;
 }
 
 form.advanced-search fieldset legend span {
@@ -45,7 +44,6 @@ form.advanced-search fieldset legend span {
     color: #777;
     font-size: 1.3rem;
     font-weight: bold;
-    background-color: pink;
 }
 
 .fieldset-row {
@@ -55,7 +53,7 @@ form.advanced-search fieldset legend span {
 }
 
 .fieldset-row label {
-    width: 17%;
+    width: 170px;
 }
 
 .fieldset-row .searchfield-description {
@@ -96,12 +94,12 @@ form.advanced-search fieldset legend span {
 
     form.advanced-search fieldset legend p,
     .fieldset-row label  {
-        width: 167px;
+        width: 170px;
     }
 
 
     .fieldset-row .searchfield-description,
-    .fieldset-header span  {
+    form.advanced-search fieldset legend span  {
         display: none;
     }
 
@@ -110,6 +108,6 @@ form.advanced-search fieldset legend span {
     }
 
     .fieldset-row input {
-        width: 65%;
+        width: calc(100% - 170px);
     }
 }
