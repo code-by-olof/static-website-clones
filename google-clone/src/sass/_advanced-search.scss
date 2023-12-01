@@ -31,6 +31,10 @@ form.advanced-search fieldset {
     border-bottom:1px solid #ebebeb;
 }
 
+form.advanced-search fieldset:nth-child(2) {
+    margin: 25px 0 0 0;
+}
+
 legend {
     width: 100%;
     display: flex;
@@ -65,12 +69,12 @@ form.advanced-search fieldset legend span.title_info-col {
     width: 33%;
 }
 
-.fieldset-row input {
+.fieldset-row input,
+.fieldset-row select {
     width: 47%;
     height: 25px;
     border: 1px solid #d9d9d9;
 }
-
 
 .fieldset-row label,
 .fieldset-row .searchfield-description {
