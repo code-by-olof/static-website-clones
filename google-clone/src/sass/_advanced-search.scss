@@ -108,6 +108,19 @@ form.advanced-search fieldset legend span.title_info-col {
 Styling for select boxes
 */
 
+.adv-search-heading {
+    width: 100%;
+    border-bottom: 1px solid #d9d9d9;
+    margin: 0 0 23px 0;
+}
+
+h1.adv_search {
+    margin: 0 0 23px 60px;
+    color: #d93025;
+    font-weight: normal;
+    color: 20px;
+}
+
 .select-box {
     background-color: #b4b4b4;
     display: flex;
@@ -119,9 +132,24 @@ Styling for select boxes
     height: 25px;
     background-color: yellow;
     pointer-events: none;
-
 }
 
+fieldset.sbumit-search {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn_adv-search {
+    margin: 0 35% 0 0;
+    background-color: #4d90fe;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    padding: 10px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 
 
@@ -156,5 +184,13 @@ Styling for select boxes
 
     .several-input-fields input {
         width: 45%;
+    }
+
+    fieldset.sbumit-search {
+        justify-content: flex-start;
+    }
+
+    .btn_adv-search {
+        margin: 0;
     }
 }

@@ -10,15 +10,19 @@
 	<div class="page-container">
 		<div class="page-header">
 			<ul>
+				<li><a href="image-search.html" title="Image Search">Image Search</a></li>
+				<li><a href="advanced-search.html" title="Image Search">Advanced Search</a></li>
 				<li><a href="#" title="Gmail">Gmail</a></li>
-				<li><a href="image-search.html" title="Images">Images</a></li>
 				<li class="apps"><a href="#" title="Apps"><span>Apps</span></a></li>
 				<li><a class="btn--sign-in" href="#" title="Sign in">Sign in</a></li>
 			</ul>
 		</div>
 		<div class="page-main">
 			<div class="page-main__container">
-				<form class="advanced-search">
+				<div class="adv-search-heading">
+					<h1 class="adv_search">Advanced Search</h1>
+				</div>
+				<form action="search-results.html" method="get" class="advanced-search">
 					<fieldset class="findPagesWith">
 							<legend><span class="legend_title">Find pages with...</span><span class="title_info-col">To do this in the search box.</span></legend>
 						<div class="fieldset-row">
@@ -61,102 +65,9 @@
 							</div>
 						</div>																											
 					</fieldset>
-					<fieldset class="findPagesWith">
-						<legend><span class="legend_title">Then narrow your results by....</span><span class="title_info-col"></span></legend>
-					<div class="fieldset-row">
-						<label for="label_06">language:</label>
-						<div class="select-box">
-							<select id="label_06">
-								<option value="any language">any language</option>
-								<option value="English">English</option>
-								<option class="German">German</option>
-								<option value="Swedish">Swedish</option>
-								<option value="Russian">Russian</option>
-								<option value="French">French</option>
-							</select>
-						</div>
-						<div class="searchfield-description">
-							<p>Find pages in the language that you select.</p>
-						</div>
-					</div>
-					<div class="fieldset-row">
-						<label for="label_07">region:</label>
-						<select id="label_07">
-							<option>any language</option>
-							<option>Sweden</option>
-							<option>United Kingdom</option>
-							<option>German</option>
-							<option>France</option>
-							<option>Spain</option>
-							<option>U.S.A.</option>
-							<option>Canada</option>
-						</select>
-						<div class="searchfield-description">
-							<p>Find pages published in a particular region.</p>
-						</div>
-					</div>
-					<div class="fieldset-row">
-						<label for="label_08">last update:</label>
-						<select id="label_08">
-							<option>anytime</option>
-							<option>past 24 hours</option>
-							<option>United Kingdom</option>
-							<option>past week</option>
-							<option>past month</option>
-							<option>past year</option>
-						</select>
-						<div class="searchfield-description">
-							<p>Find pages updated within the time that you specify.</p>
-						</div>
-					</div>
-					<div class="fieldset-row">
-						<label for="label_09">site or domain:</label>
-						<input id="label_09" type="text">
-						<div class="searchfield-description">
-							<p>Search one site (like <span>wikipedia.org</span>) or limit your results to a domain like <span>.edu, .org or .gov</span></p>
-						</div>
-					</div>
-					<div class="fieldset-row">
-						<label for="label_10">terms appearing:</label>
-						<select id="label_10">
-							<option>anywhere in the page</option>
-							<option>in the title of the page</option>
-							<option>in the text of the page</option>
-							<option>in the url of the page</option>
-							<option>in links to the page</option>
-						</select>
-						<div class="searchfield-description">
-							<p>Search for terms in the whole page, page title or web address, or links to the page you're looking for.</p>
-						</div>
-					</div>
-					<div class="fieldset-row">
-						<label for="label_11">file type:</label>
-						<select id="label_11">
-							<option>any format</option>
-							<option>Adobe Acrobe PDF (.pdf)</option>
-							<option>Adobe Postscript (.ps)</option>
-							<option>Autodesk DWF (.dwf)</option>
-							<option>Google Earth KML (.kml)</option>
-							<option>Google Earth KMZ (.kmz)</option>
-						</select>
-						<div class="searchfield-description">
-							<p>Find pages in the format that you prefer.</p>
-						</div>
-					</div>
-					<div class="fieldset-row">
-						<label for="label_12">usage rights:</label>
-						<select id="label_12">
-							<option>not filtrered by license</option>
-							<option>free to use or share</option>
-							<option>free to use or share, even commercially</option>
-							<option>free to use share or modify</option>
-							<option>Gfree to use share or modify, even commercially</option>
-						</select>
-						<div class="searchfield-description">
-							<p>Find pages that you are free to use yourself.</p>
-						</div>
-					</div>																											
-				</fieldset>					
+					<fieldset class="sbumit-search">
+						<input class="btn_adv-search" type="submit" name="adv_search" value="Advanced Search">
+					</fieldset>				
 				</form>
 			</div>
 			<div class="page-main__footer">
