@@ -827,6 +827,16 @@ aside {
   margin: 0 0 0 45px;
 }
 
+.page-header.adv-search {
+  justify-content: space-between;
+}
+
+.page-header.adv-search .search-and-settings__google-logo img {
+  width: 92px;
+  height: auto;
+  margin: 25px 0 0 23px;
+}
+
 /*
 form
 */
